@@ -1,0 +1,18 @@
+<div class="wrap d-flex flex-column align-items-center" *ngFor="let item of myContacts">
+  <h3 class="text-center">My contacts : </h3>
+  <hr/>
+  <div class="wrap d-flex flex-column justify-content-around adivgn-items-center">
+    <div class="wrap d-flex justify-content-start align-items-center">
+      <i class="fa fa-map-o" aria-hidden="true"></i> 
+      <span class="color">City : {{item.city}}</span>
+    </div>
+    <div class="wrap d-flex justify-content-start align-items-center">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+      <span class="color">Email : {{item.email}}</span>
+    </div>
+    <div class="wrap d-flex justify-content-start align-items-center">
+      <i class="fa fa-phone" aria-hidden="true"></i> 
+      <span class="color  phone">Phone : {{item.phone}}</span>
+    </div>
+  </div>
+</div>

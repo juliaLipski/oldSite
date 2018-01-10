@@ -1,0 +1,29 @@
+/*@import './node_modules/@angular/material/prebuilt-themes/indigo-pink.css';*/
+@import url('https://fonts.googleapis.com/css?family=Griffy|Yanone+Kaffeesatz:400,700');
+:root {
+    --main-bg-color: rgb(216, 212, 187);
+    --main-btn-color: #eaeaf7;
+    --main-text-color: #363636;
+    --main-a-hover-color: #ccccff;
+    --main-font-style:'"Roboto Regular", sans-serif';
+    --main-bg-url: url("http://pre07.deviantart.net/b78d/th/pre/f/2011/148/a/f/evergreen_forest_by_rockythepirate-d3hh8s0.jpg");
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+}
+h2{
+    font-size: 3rem;
+    font-weight:bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+@media (min-width: 200px) and (max-width: 902px) {
+    /* html , body{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+      } */
+      
+ }

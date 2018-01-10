@@ -1,0 +1,184 @@
+p {
+  font: 100 20px/1.3 'Oleo Script', Helvetica, sans-serif;
+}
+.caruselWrap{
+    display: none;
+}
+a{
+    font-size: 3rem;
+    font-weight:bold;
+}
+.retroShadow {
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    overflow: hidden;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+    color: var(--main-text-color);
+    text-shadow: 0 0 var(--main-text-color),
+                0 0 var(--main-text-color),
+                0 0 var(--main-text-color);
+    color: transparent;
+    transition: all 1s;
+  }
+.retroShadow:hover {
+    text-shadow: -400px 0 var(--main-text-color),
+                 400px 0 var(--main-text-color),
+                 0 0 var(--main-text-color);
+    }
+.myWorksTable{
+    border-top: 50px solid rgb(204, 200, 200); 
+    border-bottom: 50px solid rgba(204, 200, 200);
+    background-color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+}
+.welcome{
+   margin:9%;
+   padding: 8% 9% 8% 9%;
+   font-size: 22px;
+}
+.wrappColor{
+    background: -webkit-linear-gradient(55deg, #f0f8ff, #ccc, whitesmoke, lavender, transparent);
+    background: -moz-linear-gradient(55deg, #f0f8ff, #ccc, whitesmoke, lavender, transparent);
+    background: -o-linear-gradient(55deg, #f0f8ff, #ccc, whitesmoke, lavender, transparent);
+    background: linear-gradient(55deg, #f0f8ff, #ccc, whitesmoke, lavender, transparent);
+}
+
+.marg{
+    margin: 10px;
+    padding: 10px;
+}
+.myCard{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    font-size: 17px;
+    position: relative;
+    z-index: 30;
+}
+img{
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    border-radius: 0.3rem;
+}
+h2{
+    text-shadow: 2px 2px 5px gray;
+}
+hr{
+    height: 1px;
+    background-color:var(--main-btn-color);
+    width: 60%;
+}
+.headerBlock {
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    color: rgb(248, 241, 241);
+    font-weight: bold;
+    position: relative;
+    padding: 3px;
+    width: 50%;
+    height: 100%;
+}
+
+.headerBlock:before {
+    content: '';
+    width: 100%;
+    height:100%;
+    background: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.6;
+    background-color:rgb(80, 78, 78);
+}
+nav{
+    background-color: rgb(77, 76, 76);
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+header{
+    height: 700px;
+    width: 100%;
+    box-shadow: 1px 1px 3px rgba(45, 45, 45, 0.5);
+    font-family: 'Roboto Regular', sans-serif;
+    background-image: var(--main-bg-url);
+    border-bottom: 50px solid var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.welText{
+    color: #333;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+}
+h3{
+    white-space: wrap;
+}
+a{
+    font-size: 1.8rem;
+}
+a:hover{
+    cursor: pointer;
+}
+
+
+@media (min-width: 599px) and (max-width: 1102px) {
+     .myWorksTable{
+        display: block;
+    }
+    .caruselWrap{
+        display: none;
+    }
+    *{
+        font-size: 16px;
+    }
+       
+ }
+@media (min-width: 328px) and (max-width: 594px) {
+    *{
+        font-size: 16px;
+    }
+    .headerBlock{
+        width: 10%;
+    }
+    h3,h2{
+        font-size: 20px;
+    }
+    .wrappColor{
+        width: 100%;
+    }
+   
+ }
+ @media (min-width: 316px) and (max-width: 1056px) {
+    h2{
+    font-size: 25px;
+}
+    .headerBlock {
+    width: 70%;
+    height: 100%;
+}
+    .myWorksTable{
+        min-height: 900px;
+    }
+    .myCard{
+        margin: 0;
+    }
+}
+ @media (max-width: 205px) {
+    h2{
+        font-size: 18px;
+     }
+     .myWorksTable{
+         min-height: 900px;
+     }
+     .headerBlock {
+        padding: 2%;
+        width: 70%;
+        height: 100%;
+    }
+ }

@@ -1,0 +1,28 @@
+<div class="wrappColor">
+  <header  class="parallax ">
+    <div class="headerBlock d-flex flex-column justify-content-center align-items-center">
+      <div class="" [@card]>
+        <div class="myCard d-flex flex-column justify-content-center align-items-center text-center">
+            <img class="" [@card] src="assets/img/foto2.jpg" alt="">
+          <h3 class="text-center">Hello,</h3>
+          <p class="text-center">My name is Julia Lipsky</p>
+          <p>I am a web developer</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="welcome d-flex flex-column justify-content-center align-items-center">
+    <h2 class="welText">Hello and Welcome to my portfolio.</h2>
+    <p class="text-center">Here are some of my works and my contacts. I invite you to familiarize yourself with them. I hope this will help you
+      understand who I am, as a person, and as a developer. Thank you for your time and your consideration.</p>
+  </div>
+  <div class="caruselWrap">
+    <div #target>
+      <app-carusel></app-carusel>
+    </div>
+  </div>
+  <div [@works]='scrolled' class="myWorksTable">
+    <h2 class="text-center retroShadow">&#8766; My Works &#8766;</h2>
+    <app-my-works></app-my-works>
+  </div>
+</div>

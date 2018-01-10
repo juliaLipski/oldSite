@@ -1,0 +1,49 @@
+<div class="cont">
+  <section class="intro" style="background: transparent var(--main-bg-url) top center no-repeat;background-size: 100%;"></section>
+  <div class="meta">
+    <div class="meta__inner">
+      <h3 class="text-center font" [@content]>About me</h3>
+      <p>{{content1}}</p>
+      <p>{{content2}}</p>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="heading col-md-12">
+    <h2>Knowledge</h2>
+  </div>
+  <div class="middleD">
+    <div class="margTop">
+      <h3 class="text-lefl textHederCont">Frontend</h3>
+      <div class="divTable">
+        <img class="imgS" src="http://bloggood.ru/wp-content/themes/bloggood/images/RSS.png">
+        <img class="imgM" src="http://bloggood.ru/wp-content/themes/bloggood/images/RSS.png">
+        <div class="divTableBody">
+          <div class="divTableRow">
+            <div class="divTableCell">
+              <app-column-chart></app-column-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="end d-flex justify-content-around align-item-center">
+  <div class="">
+  </div>
+  <div class="margTop">
+    <h4 class="textHederCont">Backend/Db</h4>
+    <div class="d-flex  justify-content-start" *ngFor="let item of backendAndDb">
+      <div class="itemEnd">{{item}}</div>
+    </div>
+  </div>
+  <div class="margTop">
+    <h4 class="textHederCont">Another skills</h4>
+    <div class="d-flex  justify-content-start" *ngFor="let item of anotherSkills">
+      <div class="itemEnd">{{item}}</div>
+    </div>
+  </div>
+  <div class="">
+  </div>
+</div>

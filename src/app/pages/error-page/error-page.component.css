@@ -1,0 +1,24 @@
+.wrap{
+    min-height:800px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: "Paytone One";
+    color: #202020;
+    letter-spacing: -2px;
+    background-image: url("https://www2.gtel.net/wp-content/uploads/2017/05/Wood-Background.jpg");
+    color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    display: block;
+    margin: 11px 0 17px 0;
+    font-size: 80px;
+    line-height: 80px;
+    color: gray;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    letter-spacing: -4px;
+}

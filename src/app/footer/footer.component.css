@@ -1,0 +1,121 @@
+footer{
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    height: 500px;
+    width: 100%;
+    margin: 0%;
+    padding: 20px 20px 0px 20px;
+    background-color: #2D3033;
+    color:white;
+}
+.item{
+    height: 100%;
+}
+.mapContent{
+    height: 250px;
+    width: 100%;
+    background-color: #2D3033;
+}
+span{
+    padding-right: 20px;
+}
+
+.comp{
+    padding: 0%;
+    border-radius:0%;
+    margin: 0%;
+    background-color: white; 
+}
+hr{
+    height: 1px;
+    background-color: white;
+    text-shadow: 0px 0px 4px black;
+    width: 70%;  
+}
+i{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #353B3E;
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    margin: 5px;
+    color: var(--main-btn-color);
+}
+p{
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+}
+.contRight{
+    height: 200px;
+    width: 60%;
+    padding:5px;
+    margin: 10px auto;
+}
+.f2 {
+    height: 40px;
+    background-color: rgb(33, 35, 37);
+}
+.cool {
+    font-size: 16px;
+    height: 20px;
+    background-color: rgb(33, 35, 37);
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+@media (min-width: 519px) and (max-width: 1002px) {
+    footer{
+        height: 600px;
+    }
+    .contRight{
+        height: 320px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+        margin: 2px auto;
+    }
+    .item{
+        height: 100px;
+        width: 80%;
+    }
+    p{
+        word-break: break-all;
+    }
+    .item{
+        width: 32%;
+    }
+    i{
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+ }
+@media (min-width: 200px) and (max-width: 516px) {
+    footer{
+        height: 600px;
+    }
+    i{
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contRight{
+        height: 320px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+        margin: 2px auto;
+    }
+    p{
+        word-break: break-all;
+    }
+    .item{
+        height: 100px;
+        width: 80%;
+    }
+ }

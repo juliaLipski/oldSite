@@ -1,0 +1,23 @@
+<footer class="" *ngFor="let item of myContacts">
+  <div class="mapContent">
+    <app-map></app-map>
+  </div>
+  <div class="contRight d-flex  align-items-center justify-content-between">
+    <div class="item d-flex justify-content-around flex-column align-items-center">
+      <i class="text-center fa fa-envelope-o" aria-hidden="true"></i>
+      <p class="">{{item.email}}</p>
+    </div>
+    <div class="item d-flex justify-content-around flex-column align-items-center">
+      <i class="text-center fa fa-phone" aria-hidden="true"></i>
+      <p class="phone">{{item.phone}}</p>
+    </div>
+    <div class="item d-flex justify-content-around flex-column align-items-center">
+      <i class="text-center fa fa-map-marker" aria-hidden="true"></i>
+      <p class="">{{item.city}}</p>
+    </div>
+  </div>
+</footer>
+<div class="f2 d-flex justify-content-end">
+  <span class="cool">
+    <i class="text-center cool comp fa fa-copyright" aria-hidden="true"></i>2017, Julia lipsky</span>
+</div>

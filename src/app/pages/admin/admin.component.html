@@ -1,0 +1,76 @@
+<div class="container">
+  <h2>add new project</h2>
+  <form>
+    <div class="form-group">
+      <label for="contant">contant:</label>
+      <textarea class="form-control" rows="5" id="contant"></textarea>
+    </div>
+     <div class="form-group">
+            <label for="title">title: </label>
+            <input type="title" class="form-control" id="title" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label for="img">image:</label>
+            <input class="form-control" id="img" formControlName="image">
+        </div>
+         <div class="form-group">
+            <label for="src">src:</label>
+            <input  class="form-control" id="src" formControlName="src">
+        </div>
+            <button type="submit" class="btn btn-primary btn-lg" (click)="onSave()">save</button>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>correct aboutme</h2>
+  <form>
+    <div class="form-group">
+      <label for="content">contentr:</label>
+      <textarea class="form-control" rows="5" id="content"></textarea>
+    </div>
+     <div class="form-group">
+            <label for="title">title: </label>
+            <input type="title" class="form-control" id="title" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label for="img">foto:</label>
+            <input class="form-control" id="img" formControlName="image">
+        </div>
+         <div class="form-group">
+            <label for="frontend">frontend:</label>
+            <input  class="form-control" id="src" formControlName="frontend">
+        </div>
+        <div class="form-group">
+            <label for="backendAndDb">backendAndDb:</label>
+            <input  class="form-control" id="src" formControlName="backendAndDb">
+        </div>
+        <div class="form-group">
+            <label for="anotherSkills">anotherSkills:</label>
+            <input  class="form-control" id="src" formControlName="anotherSkills">
+        </div>
+            <button type="submit" class="btn btn-primary btn-lg" (click)="onSave2()">save</button>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>correct my contacts</h2>
+  <form>
+     <div class="form-group">
+            <label for="city">city: </label>
+            <input type="city" class="form-control" id="city" formControlName="city">
+        </div>
+        <div class="form-group">
+            <label for="img">foto:</label>
+            <input class="form-control" id="img" formControlName="image">
+        </div>
+         <div class="form-group">
+            <label for="email">email:</label>
+            <input  class="form-control" id="src" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">phone:</label>
+            <input  class="form-control" id="phone" formControlName="phone">
+        </div>
+            <button type="submit" class="btn btn-primary btn-lg" (click)="onSave3()">correct myContackts</button>
+  </form>
+</div>

@@ -1,0 +1,255 @@
+p {
+    font: 100 20px/1.3 'Oleo Script', Helvetica, sans-serif;
+}
+.font{
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+h3{
+    color: #363325;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+@keyframes step{
+   0% { width: 0;}
+   100% {width:100%;}
+}
+@-webkit-keyframes step{
+   0% { width: 0;}
+   100% {width:100%;}
+}
+.itemEnd{
+    margin-left: 14%;
+}
+.textHederCont{
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    border-left: 4px solid #FFDB94;
+    margin: 2.72rem;
+    padding-left: 1.72rem;
+ }
+.heading {
+    background-image: url("https://www2.gtel.net/wp-content/uploads/2017/05/Wood-Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+    text-align: center;
+} 
+.heading h2 {
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    white-space:nowrap;
+    text-shadow:  
+        -1px 1px 0 #ddd,  
+        -2px 2px 0 #c8c8c8,  
+        -3px 3px 0 #ccc,  
+        -4px 4px 0 #b8b8b8,  
+        -4px 4px 0 #bbb,  
+        0px 1px 1px rgba(0,0,0,.4),  
+        0px 2px 2px rgba(0,0,0,.3),  
+        -1px 3px 3px rgba(0,0,0,.2),  
+        -1px 5px 5px rgba(0,0,0,.1),  
+        -2px 8px 8px rgba(0,0,0,.1),  
+        -2px 13px 13px rgba(0,0,0,.1);  
+    line-height: 50px;
+    overflow:hidden;
+    -webkit-animation: step 5s steps(50) infinite;
+    animation: step 5s steps(50) infinite;
+    position: relative;
+    color: #363325;
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 1;
+    padding: 10px 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.divTable{
+    width: 100%;
+    border: 1px dotted gray;
+    box-shadow: 1px 2px 6px gray;
+    position: relative;
+}
+
+.imgS{
+    width: 55px;
+    height: 55px;
+    z-index: 2;
+    top: -33px;
+    left: -23px;
+    position: absolute;
+}
+.imgM{
+    transform: scale(-1, 1);
+    width: 55px;
+    height: 55px;
+    z-index: 2;
+    top: -33px;
+    right: -25px;
+    position: absolute;
+}
+.middleD{
+    margin-bottom: 10px;
+    padding: 6% 12% 6% 12%;
+}
+.cont {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 150px;
+    padding-top: 2px;
+    padding-bottom: 100px;
+    position: relative;
+}
+ 
+.cont * {
+    box-sizing: border-box;
+}
+ 
+.cont .intro {
+    position: relative;
+    min-height: 450px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: all .72s ease-in-out;
+}
+ 
+.cont .intro:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 700px;
+    right: -80%;
+    left: 0;
+    transform: skew(100deg);
+    background:var(--main-bg-color);
+    bottom: -70%;
+    box-shadow: inset 1px 0px 5px 0px rgba(204, 204, 204, 0.72);
+}
+ 
+.cont .meta {
+    max-width: 500px;
+    width: 100%;
+    margin: 0% auto 0;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    right: 0;
+    z-index: 10;
+    padding-top: 140px;
+    overflow: hidden;
+    transition: all .52s ease-in-out;
+}
+ 
+.cont .meta__inner {
+    padding: .25rem 1rem;
+    line-height: 1.5rem;
+    position: relative;  
+    background: #fff;
+    z-index: 15;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+ 
+.cont .meta:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 60px;
+    max-width: 500px;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #ccc;
+    transform: rotate(90deg) skew(10deg);
+    z-index: 4;
+}
+.cont h3 {
+    position: relative;
+    border-left: 4px solid #FFDB94;
+    text-shadow: 0px 0px 4px black;
+    padding-left: .72rem;  
+}
+ 
+.cont p {
+    color: #333;
+    text-align: justify;
+}
+.cont:hover .meta{
+    transform: translateY(10px);
+}
+ 
+.cont:hover .intro {
+    transform: translateY(-10px);
+}
+.end{
+    padding: 5% 0 5% 0;
+    /* width: 100%; */
+    background-image: url("https://www2.gtel.net/wp-content/uploads/2017/05/Wood-Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.color{
+    color:var(--main-text-color);
+}
+.progress{
+    height: 30px;
+    font-size: 120%;
+}
+p {
+    text-indent: 20px;
+}
+@media (min-width: 299px) and (max-width: 840px) {
+  .heading h2 {
+        font-size: 1.1em;
+        padding: 5px;
+        margin: 5px;
+      }
+    .heading {
+        padding: 30px 0px;
+        margin-top: 10px auto;
+    } 
+    .cont {
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+    
+    .cont * {
+        box-sizing: border-box;
+    }
+    .cont .intro {
+        min-height: 350px;
+        height: 100%;
+        width: 100%;
+    }
+    .cont .intro:after {
+        height: 290px;
+        right: -50%;
+        left: 0;
+        bottom: -70%;
+        }
+    .cont .meta {
+        max-width: 300px;
+        width: 100%;
+        margin: 0% auto 0;
+        top: 160px;
+        right: 0;
+        padding-top: 100px;
+        }
+    .end{
+        flex-direction: column;
+        }
+}

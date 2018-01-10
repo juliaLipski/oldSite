@@ -1,0 +1,193 @@
+.router-link-active{
+    /* color: rgb(24, 23, 23); */
+    background-color: rgb(240, 234, 234);
+    font-weight: bold;
+}
+.router-link-active i{
+    color: rgb(235, 227, 227);
+}
+.foto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 4%; 
+}
+h4{
+    color:rgb(245, 244, 238);
+    text-shadow: 0px 0px 4px black;
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    margin: 2%;
+}
+a,span{
+    color:rgb(245, 244, 238);
+    text-shadow: 0px 0px 4px black;
+}
+.hidden{
+    visibility: hidden;
+}
+.up{
+    background: rgba(245,245,245,0.5);
+    z-index: 10;
+    border-radius: 0.3rem;
+    position: fixed;
+    bottom:70px;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+}
+.upContent{
+    color: white;
+    font-size: 200%;
+}
+.up:hover{
+    cursor: pointer;
+}
+i{
+   color: rgb(238, 231, 231);
+}
+.colorHr{
+    height: 1px;
+    background-color:var(--main-btn-color);
+    width: 80%;
+}
+.cool {
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    font-size: 16px;
+    border-radius: 0.3em;
+    padding: 0 1em;
+    position: relative;
+    overflow: hidden;
+    transition: .8s;
+}
+span:hover{
+    color: rgb(219, 211, 211);
+}
+a:hover::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    bottom: -10%;
+    left: -10%;
+    background: linear-gradient(to bottom, rgba(229,222, 142, 0), rgba(255,255,255,0.7) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+a:hover::after, a:focus::after {
+   animation: sheen 3s forwards;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+button{
+    color: var(--main-text-color);
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+.logowrapper{
+    color:rgb(245, 244, 244);
+    background-color:rgb(245, 244, 244,0.6);
+    position: absolute;
+    z-index: 30;
+    top: 0%;
+    left: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+}
+nav{
+    height: 60px;
+    width: 60%;
+}
+.middleFooter{
+    widows: 100%;
+    height: 100%;
+}
+i{
+    min-height: 20px;
+    min-width:  40px;
+    font-size: 130%;
+}
+.fs200{
+    font-size: 200%; 
+}
+a,button{
+    font-size: 18px;
+}
+
+ 
+@media (min-width: 306px) and (max-width: 598px) {
+    *{
+        font-size: 18px;
+    }
+    a{
+       font-size: 18px; 
+    }
+    .logowrapper, nav{
+        height: 150px;
+
+    }
+   .Fti{
+        font-size: 100%;
+    }
+    .up{
+        right: 15px;
+        height: 30px;
+        width: 30px;
+    }
+    .upContent{
+       font-size: 22px;
+}
+ }
+ @media (min-width: 599px) and (max-width: 1102px) {
+     .up{
+         height: 40px;
+         width: 40px;
+     }
+     .upContent{
+        font-size: 200%;
+    }
+     nav{
+       margin-top: 30px;
+    }
+
+    .logowrapper{
+        min-height: 180px;
+        font-size: 18px;
+    }
+   .Fti{
+        font-size: 200%;
+    }
+    .footer{
+        margin: 5% 0% 0% 0%;
+        width: 100%;
+    }
+}  
+ 
+  @media (max-width: 305px) {
+     .up{
+        right: 15px;
+         height: 30px;
+         width: 30px;
+     }
+     .upContent{
+        font-size: 22px;
+    }
+    .footer{
+        margin: 5% 0% 0% 0%;
+        width: 100%;
+        }
+    .logowrapper{
+        min-height: 200px;
+    }
+}

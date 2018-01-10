@@ -1,0 +1,24 @@
+<div class="w d-flex flex-column">
+  <div class="container">
+    <div class="carousel">
+      <div class="item d-flex flex-column justify-content-center align-items-center" *ngFor="let item of myWorksdata">
+        <h3 class="text-center">{{item.title}}</h3>
+        <hr>
+        <div class="wrapImg">
+          <img class="pull-left img-fluid" src="{{item.image}}" alt="projectImage">
+          <p class="">{{item.content}}</p>
+          <a class="btn" href="{{item.link}}" target="_blank" (click)="hello($event)">
+            <i class="fa fa-github-square" aria-hidden="true"></i> view in github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottomDiv d-flex justify-content-between align-items-center">
+      <button class="prev btn" (click)="moveToPrev($event)" type="button">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+      <button class="next btn" type="button" (click)="moveToNext($event)">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+    </div>
+</div>

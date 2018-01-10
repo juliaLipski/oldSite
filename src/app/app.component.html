@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="logowrapper  d-flex justify-content-around" #target>
+  <div class="leftBar nav navbar-left d-flex flex-column justify-content-around align-items-center">
+      <!-- <img class="foto" src="assets/img/foto2.jpg" alt="Card image cap"> -->
+    <h4 class="">JuliaLipsky</h4>
+    </div>
+      <nav class="navbar navbar-right justify-content-end">
+        <a class="" routerLink='/home' routerLinkActive="router-link-active"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a>
+        <a class="" routerLink='/aboutMe' routerLinkActive="router-link-active">About me</a>
+      </nav>
+    <!--<div class="n2 nav navbar-right bg-faded d-flex justify-content-around align-items-center">
+      <a class="" routerLink='/login'>Login</a>
+      <button routerLink='/rejister' class="btn btn-light" role="button" aria-disabled="true">Rejister</button>
+    </div>-->
+  <!--</nav>-->
+</div>
+<div class="up  d-flex justify-content-center align-items-center" [ngClass]="{hidden: hidden}">
+  <i (click)="scroll(target)" class="fa fa-chevron-up cool upContent text-center" aria-hidden="true" data-toggle="tooltip"
+    data-placement="top" title="press to up"></i>
+</div>
+  <router-outlet></router-outlet>
+<app-footer class="footer">
+</app-footer>

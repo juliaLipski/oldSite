@@ -1,0 +1,55 @@
+<div class="bgraund d-flex  justify-content-center align-items-center">
+    	<div class="main d-flex  justify-content-center" [@login]>
+		<form [formGroup]="formlogin" class="form d-flex flex-column justify-content-center align-items-center text-center">
+		<div>
+            <i class="fa fa-id-badge"></i>
+            <h2 class="text-center">login</h2>
+        </div>
+            <hr>
+        <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="username" class="" id="username" formControlName="username">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="" id="pwd" formControlName="password">
+        </div>
+            <button type="submit" class="btn btn-primary btn-lg" (click)="onLogin()">login</button>
+        </form>
+		</div>
+	</div>
+    <!--<div class="bgraundim"></div>-->
+    <!--<div class="row d-flex  justify-content-center">
+      
+        <div class="col-lg-8 d-flex flex-column justify-content-center">-->
+    <!--<form class="m container form-horizontal">
+    <h2 class="text-center">Login</h2>
+    <hr><br>
+        <div class="form-group">
+            <label for="username">username </label>
+            <input type="username" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+            <input type="checkbox"> Remember me
+            </label>
+            <!--<label class="form-check-label" for="cb"> Remember me</label>
+                    <input class="form-check-input" type="checkbox" id="cb">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary btn-lg">login</button>
+        </div>
+    </form>-->
+    <!--</div>
+    </div>-->
+
+<!--<alert [(visible)]="showDialog" class="">
+    <div class="card jumbotron">
+        <h1 class="card-text text-center"><i class="fa fa-user-circle" aria-hidden="true"></i>User: {{currentUser}} {{currentMessage}}</h1>
+        <button (click)="showDialog = !showDialog" class="align-self-end btn btn-primary">Close</button>
+    </div>
+</alert>-->

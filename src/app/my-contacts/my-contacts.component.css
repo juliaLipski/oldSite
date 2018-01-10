@@ -1,0 +1,48 @@
+.wrap{
+    font: 100 20px/1.3 'Oleo Script', Helvetica, sans-serif;
+    padding: 3px;
+    height: 100%;
+    color: #363325;
+    text-shadow: 0px 0px 4px rgb(243, 240, 240);
+}
+i{
+    margin-right: 10px;
+}
+p{
+    width: 100%;
+}
+h3{
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    color: #363325;
+    text-shadow: 0px 0px 4px rgb(243, 240, 240);
+}
+.phone{
+    letter-spacing: 2px;
+}
+hr{
+    height: 1px;
+    background-color: #363325;
+    text-shadow: 0px 0px 4px black;
+    width: 70%;
+}
+@media (min-width: 300px) and (max-width: 516px) {
+        *{
+        font-size: 16px;
+    }
+    .wrap{
+        height: 100%;
+        width: 100%;
+    }
+    
+ }
+ @media (max-width: 299px) {
+    *{
+        font-size: 12px;
+    }
+ }
+  /* @media (min-width: 517px) and (max-width: 1000px) {
+      .wrap{
+          width: 100%;
+          font-size: 18px;
+      }
+ } */
